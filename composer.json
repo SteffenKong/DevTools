@@ -1,0 +1,22 @@
+{
+  "name": "steffenkong/devtools",
+  "description": "a dev tools",
+  "type": "library",
+  "authors": [
+    {
+      "name": "SteffemKong",
+      "email": "3266023724@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SteffenTools\\": "src"
+    }
+  },
+  "require": {
+    "nette/mail": "^3.1",
+    "predis/predis": "^1.1",
+    "alibabacloud/dysmsapi-20170525": "^1.0"
+  }
+}
+

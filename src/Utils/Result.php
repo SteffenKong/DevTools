@@ -79,7 +79,8 @@ class Result
         if (!is_null($this->pager)) {
             $data['pager'] = $this->pager;
         }
-        return StringUtils::jsonEncode($data);
+        echo StringUtils::jsonEncode($data);
+        die();
     }
 
 

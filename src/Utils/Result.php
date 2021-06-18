@@ -72,7 +72,13 @@ class Result
             'code' => $this->code,
             'success' => $this->success,
             'message' => $this->message,
+            'data' => $this->data,
+            'extra' => $this->extra
         ];
+
+        if (!is_null($this->pager)) {
+            $data['pager'] = $this->pager;
+        }
         return StringUtils::jsonEncode($data);
     }
 
